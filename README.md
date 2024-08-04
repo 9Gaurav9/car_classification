@@ -1,6 +1,7 @@
 # car_classification
 
 Citation
+Dataset - https://www.kaggle.com/datasets/jessicali9530/stanford-cars-dataset
 3D Object Representations for Fine-Grained Categorization
 
 Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei
