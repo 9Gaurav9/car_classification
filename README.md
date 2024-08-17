@@ -1,4 +1,4 @@
-# car_classification
+
 # Fine-Grained Car Model Classification
 
 ## Overview
@@ -18,58 +18,81 @@ This project focuses on classifying car images into specific makes, models, and 
 ## Setup
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/yourusername/car_classification.git
    cd car_classification
-Create and Activate Virtual Environment:
+   ```
 
-bash
-Copy code
-python -m venv myenv
-myenv\Scripts\activate
-Install Dependencies:
+2. **Create and Activate Virtual Environment:**
 
-bash
-Copy code
-pip install -r requirements.txt
-Download and Prepare Data:
+   ```bash
+   python -m venv myenv
+   myenv\Scripts\activate
+   ```
 
-Place your car dataset in a directory and update the train_dir and test_dir paths in the predict.py and train.py files.
-Usage
-Training the Model
+3. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download and Prepare Data:**
+
+   - Place your car dataset in a directory.
+   - Update the `train_dir` and `test_dir` paths in the `predict.py` and `train.py` files to point to your dataset.
+
+## Usage
+
+### Training the Model
+
 To train the model, run:
 
-bash
-Copy code
+```bash
 python train.py
-Evaluating the Model
+```
+
+### Evaluating the Model
+
 To evaluate the model's performance, run:
 
-bash
-Copy code
+```bash
 python predict.py
-Checking the Setup
+```
+
+### Checking the Setup
+
 To check the setup and dependencies, run:
 
-bash
-Copy code
+```bash
 python check.py
-Model Architecture
-The model architecture is defined in car_classification/model.py. The specific architecture used for classification is abstracted within this module. Update the file if needed to define or modify the model.
-Project Goals
-Develop a robust model to classify car images into specific makes, models, and years.
-Implement efficient data handling and preprocessing techniques.
-Achieve high classification accuracy on test data.
-Contributing
+```
+
+## Model Architecture
+
+The model is defined in `car_classification/model.py` and utilizes a custom architecture for fine-grained classification of car images.
+
+## Project Goals
+
+- Develop a robust model to classify car images into specific makes, models, and years.
+- Implement efficient data handling and preprocessing techniques.
+- Achieve high classification accuracy on test data.
+
+## Contributing
+
 Feel free to submit issues or pull requests. Contributions are welcome!
 
-License
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
-Dataset: Stanford University AI Lab Car Dataset.
-Deep learning libraries and tools: PyTorch.
-Citation
+## Acknowledgments
+
+- Dataset: Stanford University AI Lab Car Dataset.
+- Deep learning libraries and tools: PyTorch.
+
+
+DataSet Citation
 Dataset - https://www.kaggle.com/datasets/jessicali9530/stanford-cars-dataset
 3D Object Representations for Fine-Grained Categorization
 
